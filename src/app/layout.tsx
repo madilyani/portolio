@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     "freelance web developer",
     "responsive design expert",
     "frontend portfolio",
+    "Fiverr Freelancer",
+    "Fiverr Top Rated Seller",
   ],
   icons: {
     icon: "/favicon/favicon.ico",
