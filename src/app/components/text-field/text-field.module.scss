@@ -1,0 +1,29 @@
+@use "@/assets/css/components/1-main/mixin.scss" as *;
+.input {
+  display: flex;
+  input,
+  textarea {
+    width: 100%;
+    height: 100%;
+    font-family: var(--main-font);
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--main);
+    background-color: var(--white);
+    border-bottom: 0.5px solid rgba(133, 122, 122, 0.5);
+    padding: 20px 0;
+    resize: none;
+  }
+}
+// 750px
+@include sm-md {
+  .input {
+    input,
+    textarea {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 15px 0;
+    }
+  }
+}

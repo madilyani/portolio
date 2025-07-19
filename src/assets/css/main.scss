@@ -1,0 +1,63 @@
+// 1-main components
+@use "./components/1-main/mixin.scss" as *;
+@use "./components/1-main/nulifier.scss" as *;
+// 2-layout components
+@use "./components/2-layout/components.scss" as *;
+
+// fonts
+@font-face {
+  font-family: "GT America";
+  src: url("./fonts/GTAmerica-Thin.eot");
+  src: url("./fonts/GTAmerica-Thin.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/GTAmerica-Thin.woff") format("woff"),
+    url("./fonts/GTAmerica-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Flexa";
+  src: url("./fonts/GTFlexa-Light.eot");
+  src: url("./fonts/GTFlexa-Light.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/GTFlexa-Light.woff") format("woff"),
+    url("./fonts/GTFlexa-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Flexa";
+  src: url("./fonts/GTFlexa-Regular.eot");
+  src: url("./fonts/GTFlexa-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/GTFlexa-Regular.woff") format("woff"),
+    url("./fonts/GTFlexa-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Pressura Mono";
+  src: url("./fonts/GTPressuraMono-Light.eot");
+  src: url("./fonts/GTPressuraMono-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/GTPressuraMono-Light.woff") format("woff"),
+    url("./fonts/GTPressuraMono-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+// CSS Variables in :root (not .layout)
+:root {
+  --primary: #e5e0d8;
+  --main: #222222;
+  --black: #000;
+  --white: #fff;
+  --gray: #848484;
+  --light-gray: #eee9e1;
+  --main-font: "GT America", sans-serif;
+  --flexa-font: "GT Flexa", sans-serif;
+}
