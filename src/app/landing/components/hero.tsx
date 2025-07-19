@@ -51,13 +51,13 @@ const Hero = () => {
                 <motion.h1 {...fadeInLeft(0.3)} id="txt">
                   Hello
                 </motion.h1>
-                <motion.h5
+                <motion.div
                   {...fadeInLeft(0.4)}
                   className={styles["hero__inner-semi"]}
                 >
                   {" "}
                   It’s D.madilyani, Frontend Developer & UI Designer
-                </motion.h5>
+                </motion.div>
                 <motion.p {...fadeInLeft(0.5)}>
                   I build fast, responsive websites with <strong>React</strong>{" "}
                   and design user interfaces in <strong>Figma</strong>.

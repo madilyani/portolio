@@ -35,7 +35,9 @@ const ExperienceItem = ({
         })}
       >
         <div className={styles["experienceItem__title"]}>
-          <h5>{itemData.title}</h5>
+          <div className={styles["experienceItem__title-semi"]}>
+            {itemData.title}
+          </div>
           <p>{itemData.time}</p>
         </div>
         <div className={styles["experienceItem__head-row"]}>

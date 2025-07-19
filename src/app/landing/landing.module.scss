@@ -473,8 +473,12 @@
       }
     }
     &__title {
-      h5 {
+      &-semi {
         margin-bottom: 12px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: var(--flexa-font);
       }
     }
     &__tag {
@@ -1173,7 +1177,7 @@
     }
     &Item {
       &__title {
-        h5 {
+        &-semi {
           margin-bottom: 5px;
         }
       }
