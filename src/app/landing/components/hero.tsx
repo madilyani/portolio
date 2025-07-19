@@ -6,8 +6,7 @@ import imageMobile from "@/assets/images/heroMobile.webp";
 
 import arrowIcon from "@/assets/images/icons/arrow-right.svg";
 import Image from "next/image";
-import { fadeInLeft } from "@/app/constants/animation";
-import { arrowRight } from "@/app/constants/SVG";
+
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 

@@ -14,7 +14,17 @@ import avatar4 from "@/assets/images/avatars/4.webp";
 import avatar5 from "@/assets/images/avatars/5.webp";
 import avatar6 from "@/assets/images/avatars/6.webp";
 import { StaticImageData } from "next/image";
-import { cssIcon, figmaIcon, htmlIcon, pythonIcon, reactIcon } from "./SVG";
+import {
+  cssIcon,
+  dockerIcon,
+  figmaIcon,
+  htmlIcon,
+  javascriptIcon,
+  nextIcon,
+  pythonIcon,
+  reactIcon,
+  typescriptIcon,
+} from "./SVG";
 interface IExpItemSkill {
   id: string;
   value: string;
@@ -43,18 +53,26 @@ export const expList = [
       },
       {
         id: "2",
-        value: "react",
+        value: "css",
       },
       {
         id: "3",
-        value: "typescript",
+        value: "js",
       },
       {
         id: "4",
-        value: "javascript",
+        value: "react",
       },
       {
         id: "5",
+        value: "ts",
+      },
+      {
+        id: "6",
+        value: "next",
+      },
+      {
+        id: "7",
         value: "figma",
       },
     ],
@@ -69,10 +87,22 @@ export const expList = [
       },
       {
         id: "3",
+        icon: javascriptIcon,
+      },
+      {
+        id: "4",
         icon: reactIcon,
       },
       {
-        id: "3",
+        id: "5",
+        icon: typescriptIcon,
+      },
+      {
+        id: "6",
+        icon: nextIcon,
+      },
+      {
+        id: "7",
         icon: figmaIcon,
       },
     ],
@@ -110,10 +140,6 @@ export const expList = [
     skills: [
       {
         id: "1",
-        value: "react",
-      },
-      {
-        id: "2",
         value: "html",
       },
       {
@@ -123,6 +149,14 @@ export const expList = [
       {
         id: "4",
         value: "js",
+      },
+      {
+        id: "3",
+        value: "react",
+      },
+      {
+        id: "4",
+        value: "figma",
       },
     ],
     icons: [
@@ -136,10 +170,14 @@ export const expList = [
       },
       {
         id: "3",
+        icon: javascriptIcon,
+      },
+      {
+        id: "4",
         icon: reactIcon,
       },
       {
-        id: "3",
+        id: "5",
         icon: figmaIcon,
       },
     ],
@@ -193,12 +231,11 @@ export const expList = [
     icons: [
       {
         id: "1",
-        icon: pythonIcon,
+        icon: htmlIcon,
       },
-
       {
         id: "2",
-        icon: htmlIcon,
+        icon: pythonIcon,
       },
       {
         id: "3",
@@ -206,7 +243,11 @@ export const expList = [
       },
       {
         id: "3",
-        icon: figmaIcon,
+        icon: javascriptIcon,
+      },
+      {
+        id: "3",
+        icon: dockerIcon,
       },
     ],
     description: (
@@ -234,7 +275,6 @@ export const expList = [
     ),
   },
 ];
-
 // projects
 export interface IProjectItem {
   id: string;

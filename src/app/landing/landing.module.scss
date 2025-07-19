@@ -66,7 +66,7 @@
       bottom: 0;
       right: -100px;
       width: 68%;
-      max-width: 600px;
+      max-width: 650px;
       display: flex;
       justify-content: center;
       max-height: calc(100% - 200px);
@@ -286,8 +286,22 @@
     background: var(--white);
     height: 100% !important;
     border-radius: 8px;
+    position: relative;
+    &__link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
     &:hover {
       opacity: 1;
+      .projectsItem__image {
+        img {
+          transform: scale(1.1);
+        }
+      }
     }
     &__content {
       padding: 20px;
@@ -303,6 +317,7 @@
       position: relative;
       width: 100%;
       padding-bottom: 66%;
+      overflow: hidden;
       &::before {
         pointer-events: none;
         position: absolute;
@@ -319,7 +334,7 @@
         top: 0;
         left: 0;
         @include fullImage;
-        transition: 0.3s ease;
+        transition: 0.5s ease;
       }
       span {
         position: absolute;
@@ -541,13 +556,14 @@
     }
     &__row {
       display: flex;
-      justify-content: space-between;
       width: calc(44% - 10px);
       max-width: 510px;
+      flex-wrap: wrap;
+      margin: 0 -5px;
     }
     &__image {
-      width: calc(25% - 10px);
-      max-width: 150px;
+      width: calc(20% - 10px);
+      margin: 5px;
       border-radius: 6px;
       overflow: hidden;
       &:nth-child(1) {
@@ -562,10 +578,21 @@
         background: #eedf45;
         color: #a4c9ab;
       }
-
       &:nth-child(4) {
         background: #4e4717;
         color: #daa9b1;
+      }
+      &:nth-child(5) {
+        background: #4bae80;
+        color: #eedf45;
+      }
+      &:nth-child(6) {
+        background: #cf3266;
+        color: #fff;
+      }
+      &:nth-child(7) {
+        background: #daa9b1;
+        color: #4e4717;
       }
       &-inner {
         position: relative;
@@ -577,8 +604,8 @@
           top: 50%;
           left: 50%;
           @include transform;
-          width: 60%;
-          height: 60%;
+          width: 50%;
+          height: 50%;
         }
       }
     }
@@ -992,6 +1019,11 @@
           width: calc(100% - 26px);
         }
       }
+    }
+  }
+  h2 {
+    span {
+      display: block;
     }
   }
 }
@@ -1419,6 +1451,11 @@
         width: 100%;
         max-width: unset;
       }
+    }
+  }
+  .projects {
+    .arrows {
+      width: 100%;
     }
   }
 }

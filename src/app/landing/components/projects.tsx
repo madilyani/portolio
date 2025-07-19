@@ -14,6 +14,11 @@ import { fadeInLeft, fadeInUp } from "@/app/constants/animation";
 const ProjectsItem = ({ itemData }: { itemData: IProjectItem }) => {
   return (
     <div className={styles["projectsItem"]}>
+      <a
+        href={itemData.link}
+        target="_blank"
+        className={styles["projectsItem__link"]}
+      ></a>
       <div className={styles["projectsItem__image"]}>
         <Image
           width={260}

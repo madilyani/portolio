@@ -4,9 +4,17 @@ import { arrowRight } from "@/app/constants/SVG";
 import { IServiceItem, servicesList } from "@/app/constants/modul";
 import asteriks from "@/assets/images/icons/asterisk.svg";
 import Image from "next/image";
-const ServiceItem = ({ itemData }: { itemData: IServiceItem }) => {
+import { motion } from "framer-motion";
+import { fadeIn, fadeInLeft, fadeInUp } from "@/app/constants/animation";
+const ServiceItem = ({
+  itemData,
+  index,
+}: {
+  itemData: IServiceItem;
+  index: number;
+}) => {
   return (
-    <div className={styles["servicesCard"]}>
+    <motion.div {...fadeInUp(index * 0.1)} className={styles["servicesCard"]}>
       <div className={styles["servicesCard__title"]}>
         <span style={{ backgroundColor: itemData.iconColor }}></span>
         <b>{itemData.title}</b>
@@ -24,7 +32,7 @@ const ServiceItem = ({ itemData }: { itemData: IServiceItem }) => {
           );
         })}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 const Services = () => {
@@ -34,14 +42,19 @@ const Services = () => {
         <div className={styles["services__inner"]}>
           <div className={styles["services__inner-top"]}>
             <div className="title">
-              <div className="title__semi">
+              <motion.div {...fadeInLeft(0.2)} className="title__semi">
                 <span style={{ backgroundColor: "#4BAE80" }}></span>
                 Services
-              </div>
-              <h2>Build. Design.</h2>
-              <h2>Optimize.</h2>
+              </motion.div>
+              <h2>
+                <motion.span {...fadeInLeft(0.3)}>Build. Design.</motion.span>{" "}
+                <motion.span {...fadeInLeft(0.4)}>Optimize.</motion.span>
+              </h2>
             </div>
-            <div className={styles["services__inner-text"]}>
+            <motion.div
+              {...fadeIn(0.4)}
+              className={styles["services__inner-text"]}
+            >
               <p className="sm">
                 As a creative front-end developer, I provide a range of services
                 designed to bring your digital vision to life. From custom
@@ -57,11 +70,11 @@ const Services = () => {
                 <b>Book a call</b>
                 <span>{arrowRight}</span>
               </a>
-            </div>
+            </motion.div>
           </div>
           <div className={styles["services__inner-row"]}>
             {servicesList.map((item, index) => {
-              return <ServiceItem key={index} itemData={item} />;
+              return <ServiceItem index={index} key={index} itemData={item} />;
             })}
           </div>
         </div>

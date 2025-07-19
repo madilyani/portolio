@@ -6,7 +6,7 @@ import { ITestimonialItem, testimonialsList } from "@/app/constants/modul";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import classNames from "classnames";
-import { fadeIn, fadeInLeft, fadeInUp } from "@/app/constants/animation";
+import { fadeInLeft, fadeInUp } from "@/app/constants/animation";
 const ReviewItem = ({
   itemData,
   active,
