@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "../landing.module.scss";
 import image from "@/assets/images/hero.webp";
-import imageMobile from "@/assets/images/imageMobile.webp";
+import imageMobile from "@/assets/images/heroMobile.webp";
 
 import arrowIcon from "@/assets/images/icons/arrow-right.svg";
 import Image from "next/image";
