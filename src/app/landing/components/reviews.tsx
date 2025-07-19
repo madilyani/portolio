@@ -34,7 +34,7 @@ const ReviewItem = ({
         }}
       >
         <div className={styles["testimonialsItem__num"]}>
-          <h5>{itemData.id}</h5>
+          <div className={styles["testimonialsItem__num-inner"]}>{itemData.id}</div>
         </div>
         <div className={styles["testimonialsItem__info"]}>
           <div className={styles["testimonialsItem__avatar"]}>

@@ -688,6 +688,12 @@
     &__num {
       width: 125px;
       color: #857a7a;
+      &-inner {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: var(--flexa-font);
+      }
     }
     &__info {
       width: calc(100% - 250px);
