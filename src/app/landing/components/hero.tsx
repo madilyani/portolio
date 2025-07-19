@@ -63,7 +63,7 @@ const Hero = () => {
             </a>
           </div>
           <div className={styles["hero__inner-image"]}>
-            <Image priority src={image} alt="hero" />
+            <Image fetchPriority="high" priority src={image} alt="hero" />
           </div>
         </div>
       </div>
