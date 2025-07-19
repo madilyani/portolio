@@ -1,11 +1,25 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import styles from "../landing.module.scss";
 import image from "@/assets/images/hero.webp";
+import imageMobile from "@/assets/images/imageMobile.webp";
+
 import arrowIcon from "@/assets/images/icons/arrow-right.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeInLeft } from "@/app/constants/animation";
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
   return (
     <section className={styles["hero"]}>
       <div className="auto__container">
@@ -63,7 +77,12 @@ const Hero = () => {
             </a>
           </div>
           <div className={styles["hero__inner-image"]}>
-            <Image fetchPriority="high" priority src={image} alt="hero" />
+            <Image
+              src={isMobile ? imageMobile : image}
+              alt={isMobile ? "Mobile content" : "Desktop content"}
+              fetchPriority="high"
+              priority
+            />
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import "@/assets/css/main.scss";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
 import heroImage from "@/assets/images/hero.webp";
+import heroMobile from "@/assets/images/heroMobile.webp";
 
 export const metadata: Metadata = {
   title: {
@@ -44,9 +45,16 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="preload"
+          href={heroMobile.src}
+          as="image"
+          media="(max-width: 768px)"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
           href={heroImage.src}
           as="image"
-          type="image/webp"
+          media="(min-width: 769px)"
           fetchPriority="high"
         />
       </head>
