@@ -34,7 +34,9 @@ const ReviewItem = ({
         }}
       >
         <div className={styles["testimonialsItem__num"]}>
-          <div className={styles["testimonialsItem__num-inner"]}>{itemData.id}</div>
+          <div className={styles["testimonialsItem__num-inner"]}>
+            {itemData.id}
+          </div>
         </div>
         <div className={styles["testimonialsItem__info"]}>
           <div className={styles["testimonialsItem__avatar"]}>
@@ -48,7 +50,9 @@ const ReviewItem = ({
           </div>
         </div>
         <div className={styles["testimonialsItem__button"]}>
-          <h5>{active ? "Close" : "Read review"}</h5>
+          <div className="testimonialsItem__button-text">
+            {active ? "Close" : "Read review"}
+          </div>
           {arrowRight}
         </div>
       </div>

@@ -657,7 +657,7 @@
     &.active {
       .testimonialsItem {
         &__button {
-          h5 {
+          &-text {
             opacity: 1;
           }
           svg {
@@ -672,7 +672,7 @@
       }
       .testimonialsItem {
         &__button {
-          h5 {
+          &-text {
             opacity: 1;
           }
         }
@@ -730,9 +730,13 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      h5 {
+      &-text {
         opacity: 0;
         transition: 0.3s ease;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: var(--flexa-font);
       }
       svg {
         width: 14px;
@@ -1383,7 +1387,7 @@
         svg {
           margin-left: 0;
         }
-        h5 {
+        &-text {
           display: none;
         }
       }
