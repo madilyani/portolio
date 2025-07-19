@@ -44,7 +44,7 @@ const Hero = () => {
                     <sup>+</sup>
                     <b>20</b>
                   </div>
-                  <p className="sm">Startups Funded via My Wor</p>
+                  <p className="sm">Startups Funded </p>
                 </div>
               </div>
               <div className={styles["hero__inner-title"]}>
