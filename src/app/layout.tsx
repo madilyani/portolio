@@ -41,6 +41,13 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="preload"
+          href="/assets/images/hero-image.webp"
+          as="image"
+          type="image/webp"
+          fetchPriority="high"
+        />
       </head>
       <body>
         <div className="layout">

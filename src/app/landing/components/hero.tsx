@@ -37,7 +37,10 @@ const Hero = () => {
                 <motion.h1 {...fadeInLeft(0.3)} id="txt">
                   Hello
                 </motion.h1>
-                <motion.h5 {...fadeInLeft(0.4)} className={styles["hero__inner-semi"]}>
+                <motion.h5
+                  {...fadeInLeft(0.4)}
+                  className={styles["hero__inner-semi"]}
+                >
                   {" "}
                   It’s D.madilyani, Frontend Developer & UI Designer
                 </motion.h5>
@@ -60,7 +63,7 @@ const Hero = () => {
             </a>
           </div>
           <div className={styles["hero__inner-image"]}>
-            <Image src={image} alt="hero" />
+            <Image priority src={image} alt="hero" />
           </div>
         </div>
       </div>
