@@ -35,10 +35,14 @@ export const metadata: Metadata = {
       "Looking for a React and Next.js developer? View 790+ projects by expert UI/UX designer D. Madilyani.",
     type: "website",
     url: "https://portolio-bay-six.vercel.app/",
+    siteName: "Madilyani Portfolio",
+
     images: [
       {
         url: "/magic-links/image-jpg.jpg",
-        alt: "React developer coding interface",
+        width: 1200,
+        height: 630,
+        alt: "D. Madilyani's developer portfolio",
       },
     ],
   },
