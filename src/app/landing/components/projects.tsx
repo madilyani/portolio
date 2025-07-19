@@ -39,10 +39,10 @@ const Projects = () => {
       <div className="auto__container">
         <div className={styles["projects__inner"]}>
           <div className="title">
-            <motion.h5 {...fadeInLeft(0.2)}>
+            <motion.div className="title__semi" {...fadeInLeft(0.2)}>
               <span style={{ backgroundColor: "#ebc23a" }}></span>
               <b>Portfolio</b>
-            </motion.h5>
+            </motion.div>
 
             <h2>
               <motion.span {...fadeInLeft(0.3)}>Bringing Ideas</motion.span>{" "}

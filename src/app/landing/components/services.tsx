@@ -34,10 +34,10 @@ const Services = () => {
         <div className={styles["services__inner"]}>
           <div className={styles["services__inner-top"]}>
             <div className="title">
-              <h5>
+              <div className="title__semi">
                 <span style={{ backgroundColor: "#4BAE80" }}></span>
                 Services
-              </h5>
+              </div>
               <h2>Build. Design.</h2>
               <h2>Optimize.</h2>
             </div>

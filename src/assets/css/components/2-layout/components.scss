@@ -64,10 +64,14 @@ p {
   top: -100px;
 }
 .title {
-  h5 {
+  &__semi {
     display: flex;
     align-items: center;
     margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: var(--flexa-font);
     span {
       width: 12px;
       height: 12px;
@@ -134,8 +138,12 @@ p {
     line-height: 20px;
   }
   .title {
-    h5 {
+    &__semi {
       margin-bottom: 16px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      font-family: var(--flexa-font);
     }
   }
 }

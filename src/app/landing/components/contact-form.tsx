@@ -82,10 +82,10 @@ const ContactForm = () => {
           <div className={styles["contact__inner-row"]}>
             <div className={styles["contact__inner-content"]} id="contact">
               <div className="title">
-                <h5>
+                <div className="title__semi">
                   <span style={{ backgroundColor: "#EB8B37" }}></span>
                   Contact me
-                </h5>
+                </div>
                 <h2>
                   Let’s Get in <br />
                   Touch

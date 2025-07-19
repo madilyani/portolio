@@ -102,10 +102,10 @@ const Experience = () => {
         <div className={styles["experience__inner"]}>
           <div className={styles["experience__inner-top"]}>
             <div className="title">
-              <motion.h5 {...fadeInLeft(0.2)}>
+              <motion.div className="title__semi" {...fadeInLeft(0.2)}>
                 <span style={{ backgroundColor: "#CF3266" }}></span>
                 Experience
-              </motion.h5>
+              </motion.div>
               <h2>
                 <motion.span {...fadeInLeft(0.3)}>Explore my</motion.span>{" "}
                 <motion.span {...fadeInLeft(0.4)}>Journey</motion.span>

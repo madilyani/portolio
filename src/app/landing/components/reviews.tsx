@@ -75,10 +75,10 @@ const Reviews = () => {
       <div className="auto__container">
         <div className={styles["testimonials__inner"]}>
           <div className="title">
-            <motion.h5 {...fadeInLeft(0.2)}>
+            <motion.div className="title__semi" {...fadeInLeft(0.2)}>
               <span style={{ backgroundColor: "#934FF0" }}></span>
               Testimonials
-            </motion.h5>
+            </motion.div>
             <h2>
               <motion.span {...fadeInLeft(0.3)}>Hear from</motion.span>{" "}
               <motion.span {...fadeInLeft(0.4)}>My Clients</motion.span>

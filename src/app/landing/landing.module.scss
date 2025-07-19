@@ -1469,6 +1469,26 @@
   .hero {
     &__inner {
       padding-top: 90px;
+      &-semi {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+  .experience {
+    &Item {
+      &__title {
+        &-semi {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+    &__title {
+      &-semi {
+        font-size: 16px;
+        line-height: 22px;
+      }
     }
   }
   .about {
