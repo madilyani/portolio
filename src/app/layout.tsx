@@ -30,19 +30,18 @@ export const metadata: Metadata = {
     apple: "/favicon/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Hire React.js Developer | D. Madilyani Portfolio",
+    type: "website",
+    url: "/",
+    title: "D. Madilyani | React & UI Designer",
     description:
       "Looking for a React and Next.js developer? View 790+ projects by expert UI/UX designer D. Madilyani.",
-    type: "website",
-    url: "https://portolio-bay-six.vercel.app/",
     siteName: "Madilyani Portfolio",
-
     images: [
       {
         url: "/magic-links/image-jpg.jpg",
         width: 1200,
         height: 630,
-        alt: "D. Madilyani's developer portfolio",
+        alt: "Portfolio Preview",
       },
     ],
   },
