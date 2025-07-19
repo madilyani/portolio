@@ -51,7 +51,7 @@ const ReviewItem = ({
         </div>
         <div className={styles["testimonialsItem__button"]}>
           <div className="testimonialsItem__button-text">
-            {active ? "Close" : "Read review"}
+            {active === itemData.id ? "Close" : "Read review"}
           </div>
           {arrowRight}
         </div>
