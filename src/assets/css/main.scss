@@ -6,22 +6,8 @@
 
 // fonts
 @font-face {
-  font-family: "GT America";
-  src: url("./fonts/GTAmerica-Thin.eot");
-  src: url("./fonts/GTAmerica-Thin.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/GTAmerica-Thin.woff") format("woff"),
-    url("./fonts/GTAmerica-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "GT Flexa";
-  src: url("./fonts/GTFlexa-Light.eot");
-  src: url("./fonts/GTFlexa-Light.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/GTFlexa-Light.woff") format("woff"),
-    url("./fonts/GTFlexa-Light.ttf") format("truetype");
+  src: url("./fonts/GTFlexa-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -29,22 +15,23 @@
 
 @font-face {
   font-family: "GT Flexa";
-  src: url("./fonts/GTFlexa-Regular.eot");
-  src: url("./fonts/GTFlexa-Regular.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/GTFlexa-Regular.woff") format("woff"),
-    url("./fonts/GTFlexa-Regular.ttf") format("truetype");
+  src: url("./fonts/GTFlexa-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
+  font-family: "GT America";
+  src: url("./fonts/GTAmerica-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "GT Pressura Mono";
-  src: url("./fonts/GTPressuraMono-Light.eot");
-  src: url("./fonts/GTPressuraMono-Light.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/GTPressuraMono-Light.woff") format("woff"),
-    url("./fonts/GTPressuraMono-Light.ttf") format("truetype");
+  src: url("./fonts/GTPressuraMono-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
