@@ -7,10 +7,10 @@ import Image from "next/image";
 const ServiceItem = ({ itemData }: { itemData: IServiceItem }) => {
   return (
     <div className={styles["servicesCard"]}>
-      <h5>
+      <div className={styles["servicesCard__title"]}>
         <span style={{ backgroundColor: itemData.iconColor }}></span>
         <b>{itemData.title}</b>
-      </h5>
+      </div>
       <p className="sm">{itemData.description}</p>
       <ul>
         {itemData.features.map((item, index) => {

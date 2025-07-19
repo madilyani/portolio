@@ -41,7 +41,9 @@ const ReviewItem = ({
             <Image width={80} height={80} src={itemData.avatar} alt="avatar" />
           </div>
           <div className={styles["testimonialsItem__name"]}>
-            <h5>{itemData.name}</h5>
+            <div className={styles["testimonialsItem__name-title"]}>
+              {itemData.name}
+            </div>
             <p className="ex">{itemData.profession}</p>
           </div>
         </div>
