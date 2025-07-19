@@ -37,8 +37,10 @@ const Hero = () => {
                 <motion.h1 {...fadeInLeft(0.3)} id="txt">
                   Hello
                 </motion.h1>
+                <h5> It’s D.madilyani, Frontend Developer & UI Designer</h5>
                 <motion.p {...fadeInLeft(0.5)}>
-                  It’s D.madilyani web front end dev. UI/UX expert.
+                  I build fast, responsive websites with <strong>React</strong>{" "}
+                  and design user interfaces in <strong>Figma</strong>.
                 </motion.p>
               </div>
             </div>

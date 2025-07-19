@@ -15,7 +15,12 @@ const ProjectsItem = ({ itemData }: { itemData: IProjectItem }) => {
   return (
     <div className={styles["projectsItem"]}>
       <div className={styles["projectsItem__image"]}>
-        <Image width={260} height={240} src={itemData.image} alt="project" />
+        <Image
+          width={260}
+          height={240}
+          src={itemData.image}
+          alt="React frontend project"
+        />
       </div>
       <div className={styles["projectsItem__content"]}>
         <h5>{itemData.title}</h5>
