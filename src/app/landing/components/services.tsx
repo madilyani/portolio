@@ -1,10 +1,11 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import styles from "../landing.module.scss";
 import { arrowRight } from "@/app/constants/SVG";
 import { IServiceItem, servicesList } from "@/app/constants/modul";
 import asteriks from "@/assets/images/icons/asterisk.svg";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { fadeIn, fadeInLeft, fadeInUp } from "@/app/constants/animation";
 const ServiceItem = ({
   itemData,
@@ -36,8 +37,13 @@ const ServiceItem = ({
   );
 };
 const Services = () => {
+  const section = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: section,
+    offset: ["start end", "end start"],
+  });
   return (
-    <section className={styles["services"]} id="services">
+    <section className={styles["services"]} id="services" ref={section}>
       <div className="auto__container">
         <div className={styles["services__inner"]}>
           <div className={styles["services__inner-top"]}>
@@ -53,6 +59,9 @@ const Services = () => {
             </div>
             <motion.div
               {...fadeIn(0.4)}
+              style={{
+                y: useTransform(scrollYProgress, [0, 0.8], [0, 100]),
+              }}
               className={styles["services__inner-text"]}
             >
               <p className="sm">

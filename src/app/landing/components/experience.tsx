@@ -1,10 +1,10 @@
 "use client";
 import { expList, IExpItem } from "@/app/constants/modul";
 import classNames from "classnames";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from "../landing.module.scss";
 import { arrowRight } from "@/app/constants/SVG";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import { fadeIn, fadeInLeft, fadeInUp } from "@/app/constants/animation";
 const ExperienceItem = ({
   itemData,
@@ -95,9 +95,13 @@ const ExperienceItem = ({
 };
 const Experience = () => {
   const [isActive, setIsActive] = useState<string | null>(null);
-
+  const section = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: section,
+    offset: ["start end", "end start"],
+  });
   return (
-    <section className={styles["experience"]}>
+    <section className={styles["experience"]} ref={section}>
       <div className="auto__container">
         <div className={styles["experience__inner"]}>
           <div className={styles["experience__inner-top"]}>
@@ -112,6 +116,9 @@ const Experience = () => {
               </h2>
             </div>
             <motion.div
+              style={{
+                y: useTransform(scrollYProgress, [0, 0.8], [0, 100]),
+              }}
               {...fadeIn(0.6)}
               className={styles["experience__inner-text"]}
             >

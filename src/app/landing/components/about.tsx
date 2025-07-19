@@ -1,15 +1,21 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import styles from "../landing.module.scss";
 import earthIcon from "@/assets/images/icons/earth.svg";
 import about from "@/assets/images/photos/2.webp";
 import starBg from "@/assets/images/icons/star-circle.svg";
 import curvedArrow from "@/assets/images/curved-arrow.webp";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { fadeIn, fadeInLeft } from "@/app/constants/animation";
 const About = () => {
+  const section = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: section,
+    offset: ["start end", "end start"],
+  });
   return (
-    <section className={styles["about"]}>
+    <section className={styles["about"]} ref={section}>
       <div className="auto__container">
         <div className={styles["about__inner"]}>
           <div className={styles["about__inner-col"]}>
@@ -30,7 +36,13 @@ const About = () => {
               <Image src={curvedArrow} alt="curved arrow" />
             </motion.div>
           </div>
-          <div className={styles["aboutCard"]} id="card">
+          <motion.div
+            style={{
+              y: useTransform(scrollYProgress, [0, 0.8], [0, 150]),
+            }}
+            className={styles["aboutCard"]}
+            id="card"
+          >
             <div className="aboutCard__icon">
               <Image width={24} height={24} src={earthIcon} alt="earthIcon" />
             </div>
@@ -42,7 +54,7 @@ const About = () => {
             <div className={styles["aboutCard__image"]}>
               <Image src={about} alt="about" />
             </div>
-          </div>
+          </motion.div>
           <div className={styles["about__inner-col"]}>
             <ul>
               <motion.li {...fadeIn(0.2)}>

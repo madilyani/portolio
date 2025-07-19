@@ -668,6 +668,7 @@
     position: relative;
     border-radius: 6px;
     overflow: hidden;
+    border-bottom: 1px solid #dfdfdf;
     &::before {
       position: absolute;
       content: "";
