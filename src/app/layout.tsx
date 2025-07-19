@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Madilyani Portfolio",
     images: [
       {
-        url: "/magic-links/image-jpg.jpg",
+        url: "https://portolio-bay-six.vercel.app/image-jpg.jpg",
         width: 1200,
         height: 630,
         alt: "Portfolio Preview",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "React Developer for Hire - D. Madilyani",
     description:
       "Frontend developer specializing in Next.js and Figma UI design",
-    images: "/magic-links/image-jpg.jpg",
+    images: "https://portolio-bay-six.vercel.app/image-jpg.jpg",
   },
   metadataBase: new URL("https://portolio-bay-six.vercel.app/"),
 };
