@@ -17,6 +17,7 @@ const ProjectsItem = ({ itemData }: { itemData: IProjectItem }) => {
       <a
         href={itemData.link}
         target="_blank"
+        aria-label={itemData.title}
         className={styles["projectsItem__link"]}
       ></a>
       <div className={styles["projectsItem__image"]}>
