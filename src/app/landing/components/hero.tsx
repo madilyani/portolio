@@ -6,7 +6,6 @@ import imageMobile from "@/assets/images/heroMobile.webp";
 
 import arrowIcon from "@/assets/images/icons/arrow-right.svg";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { fadeInLeft } from "@/app/constants/animation";
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -48,17 +47,12 @@ const Hero = () => {
                 </div>
               </div>
               <div className={styles["hero__inner-title"]}>
-                <h1 {...fadeInLeft(0.3)} id="txt">
-                  Hello
-                </h1>
-                <div
-                  {...fadeInLeft(0.4)}
-                  className={styles["hero__inner-semi"]}
-                >
+                <h1 id="txt">Hello</h1>
+                <div className={styles["hero__inner-semi"]}>
                   {" "}
                   It’s D.madilyani, Frontend Developer & UI Designer
                 </div>
-                <div {...fadeInLeft(0.5)}>
+                <div>
                   I build fast, responsive websites with <strong>React</strong>{" "}
                   and design user interfaces in <strong>Figma</strong>.
                 </div>
