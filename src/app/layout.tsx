@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/assets/css/main.scss";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
+import heroImage from "@/assets/images/hero.webp";
 
 export const metadata: Metadata = {
   title: {
@@ -43,7 +44,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="preload"
-          href="/assets/images/hero-image.webp"
+          href={heroImage.src}
           as="image"
           type="image/webp"
           fetchPriority="high"
