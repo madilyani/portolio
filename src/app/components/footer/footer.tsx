@@ -23,7 +23,9 @@ const Footer = () => {
                 </a>
               </div>
               <div className={styles["footerTitle"]}>
-                <h6>Let’s Build Something Great Together!</h6>
+                <div className={styles["footerTitle__lets"]}>
+                  Let’s Build Something Great Together!
+                </div>
                 <p className="sm">
                   Visit my Fiverr profile to get started on your next project
                   today.

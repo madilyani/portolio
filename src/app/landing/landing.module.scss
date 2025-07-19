@@ -8,6 +8,13 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    &-semi {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 8px;
+      font-family: var(--flexa-font);
+    }
     &-side {
       position: absolute;
       bottom: 40px;
@@ -53,9 +60,6 @@
     }
     &-title {
       margin-bottom: 20px;
-      h5 {
-        margin-bottom: 8px;
-      }
     }
     &-image {
       position: absolute;
@@ -287,6 +291,13 @@
     }
     &__content {
       padding: 20px;
+      &-title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 12px;
+        font-family: var(--flexa-font);
+      }
     }
     &__image {
       position: relative;
@@ -333,9 +344,6 @@
           transform: rotate(-45deg);
         }
       }
-    }
-    h5 {
-      margin-bottom: 12px;
     }
   }
   .arrows {
@@ -1478,11 +1486,13 @@
   .projects {
     padding: 35px 0;
     &Item {
+      &__content {
+        &-title {
+          margin-bottom: 5px;
+        }
+      }
       &__image {
         margin-bottom: 15px;
-      }
-      h5 {
-        margin-bottom: 5px;
       }
     }
   }

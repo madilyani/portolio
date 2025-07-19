@@ -23,7 +23,9 @@ const ProjectsItem = ({ itemData }: { itemData: IProjectItem }) => {
         />
       </div>
       <div className={styles["projectsItem__content"]}>
-        <h5>{itemData.title}</h5>
+        <div className={styles["projectsItem__content-title"]}>
+          {itemData.title}
+        </div>
         <p>{itemData.text}</p>
       </div>
     </div>

@@ -139,8 +139,12 @@
   &Title {
     width: calc(100% - 180px);
     max-width: 210px;
-    h6 {
+    &__lets {
       margin-bottom: 10px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      font-family: var(--flexa-font);
     }
   }
 }
