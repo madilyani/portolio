@@ -28,6 +28,10 @@
         align-items: center;
         color: var(--black);
         margin-bottom: 10px;
+        @include transition;
+        &:hover {
+          color: #eb8b37;
+        }
         &:last-child {
           margin: 0;
         }
@@ -53,6 +57,10 @@
       flex-direction: column;
       a {
         margin-bottom: 10px;
+        @include transition;
+        &:hover {
+          color: #eb8b37;
+        }
         &:last-child {
           margin: 0;
         }
@@ -102,6 +110,10 @@
         line-height: 20px;
         color: var(--main);
         margin-right: 40px;
+        @include transition;
+        &:hover {
+          color: #eb8b37;
+        }
         &:last-child {
           margin: 0;
         }
@@ -131,6 +143,10 @@
       justify-content: center;
       align-items: center;
       z-index: 2;
+      @include transition;
+      &:hover {
+        color: #eb8b37;
+      }
       img {
         width: 100%;
       }

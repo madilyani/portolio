@@ -65,6 +65,10 @@
           font-size: 16px;
           line-height: 19px;
           color: var(--main);
+          @include transition;
+          &:hover {
+            color: #cf3266;
+          }
         }
       }
     }
