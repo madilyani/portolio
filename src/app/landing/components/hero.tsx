@@ -7,6 +7,7 @@ import imageMobile from "@/assets/images/heroMobile.webp";
 import arrowIcon from "@/assets/images/icons/arrow-right.svg";
 import Image from "next/image";
 import { fadeInLeft } from "@/app/constants/animation";
+import { arrowRight } from "@/app/constants/SVG";
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -36,25 +37,34 @@ const Hero = () => {
                     <sup>+</sup>
                     <b>790</b>
                   </div>
-                  <p className="sm">Projects completed</p>
+                  <p className="sm">Web Projects Delivered</p>
                 </div>
                 <div className={styles["heroItem"]}>
                   <div className={styles["heroItem__number"]}>
                     <sup>+</sup>
                     <b>20</b>
                   </div>
-                  <p className="sm">Startup raised</p>
+                  <p className="sm">Startups Funded via My Wor</p>
                 </div>
               </div>
               <div className={styles["hero__inner-title"]}>
                 <h1 id="txt">Hello</h1>
                 <div className={styles["hero__inner-semi"]}>
-                  {" "}
-                  It’s D.madilyani, Frontend Developer & UI Designer
+                  I'm D. Madilyani, Frontend Developer & UI Designer
                 </div>
-                <div>
-                  I build fast, responsive websites with <strong>React</strong>{" "}
-                  and design user interfaces in <strong>Figma</strong>.
+                <div className={styles["hero__inner-text"]}>
+                  I build <strong>lightning-fast websites</strong> with Next.js
+                  and craft <strong>conversion-focused designs</strong> in Figma
+                  for startups and businesses.
+                </div>
+                <div className="sr-only" aria-hidden="true">
+                  <h2>React Developer Portfolio</h2>
+                  <p>
+                    Freelance web developer and UI designer available for hire
+                  </p>
+                  <p>
+                    Services: Website development, Figma design, UX consulting
+                  </p>
                 </div>
               </div>
             </div>
@@ -62,9 +72,9 @@ const Hero = () => {
             <a
               href="#about"
               className={styles["hero__inner-scroll"]}
-              aria-label="go to section"
+              aria-label="View my frontend development portfolio projects"
             >
-              <b>Scroll down</b>
+              <b>Explore My Work</b>
               <span>
                 <Image src={arrowIcon} alt="arrow right" />
               </span>
@@ -73,7 +83,11 @@ const Hero = () => {
           <div className={styles["hero__inner-image"]}>
             <Image
               src={isMobile ? imageMobile : image}
-              alt={isMobile ? "Mobile content" : "Desktop content"}
+              alt={
+                isMobile
+                  ? "D. Madilyani - Frontend developer working on mobile design"
+                  : "D. Madilyani - Professional web developer workspace setup"
+              }
               fetchPriority="high"
               priority
             />

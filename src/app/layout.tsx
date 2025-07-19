@@ -11,23 +11,40 @@ export const metadata: Metadata = {
     template: "%s | Madilyani",
   },
   description:
-    "Professional portfolio showcasing frontend development and Figma design work...",
+    "D. Madilyani - Award-winning Frontend Developer & UI Designer. Specializing in React, Next.js, and Figma design for startups. 790+ projects delivered with 20+ successful fundraisers.",
+  keywords: [
+    "React developer",
+    "Figma designer",
+    "Next.js specialist",
+    "TypeScript developer",
+    "UI/UX designer",
+    "freelance web developer",
+    "responsive design expert",
+    "frontend portfolio",
+  ],
   icons: {
     icon: "/favicon/favicon.ico",
     shortcut: "/favicon/favicon-96x96.png",
     apple: "/favicon/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Madilyani | Frontend Developer & Designer",
-    description: "Portfolio showcasing web development and UI design projects",
+    title: "Hire React.js Developer | D. Madilyani Portfolio",
+    description:
+      "Looking for a React and Next.js developer? View 790+ projects by expert UI/UX designer D. Madilyani.",
     type: "website",
     url: "https://portolio-bay-six.vercel.app/",
-    images: "/magic-links/image-jpg.jpg",
+    images: [
+      {
+        url: "/magic-links/image-jpg.jpg",
+        alt: "React developer coding interface",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Madilyani - Frontend Developer",
-    description: "Building beautiful, functional websites and designs",
+    title: "React Developer for Hire - D. Madilyani",
+    description:
+      "Frontend developer specializing in Next.js and Figma UI design",
     images: "/magic-links/image-jpg.jpg",
   },
   metadataBase: new URL("https://portolio-bay-six.vercel.app/"),
@@ -43,6 +60,7 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <link
           rel="preload"
           href={heroMobile.src}
