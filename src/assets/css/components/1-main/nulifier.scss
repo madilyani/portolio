@@ -54,6 +54,9 @@ body {
   line-height: 26px;
   font-weight: 100;
   background: var(--light-gray);
+  &.no-scoll {
+    overflow: hidden;
+  }
 }
 a {
   text-decoration: none;

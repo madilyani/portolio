@@ -29,15 +29,15 @@ const Header = () => {
 
   useEffect(() => {
     if (menu) {
-      document.body.classList.add("active");
+      document.body.classList.add("no-scoll");
     } else {
-      document.body.classList.remove("active");
+      document.body.classList.remove("no-scoll");
     }
   }, [menu]);
   useEffect(() => {
     window.scrollTo(0, 0);
     setMenu(false);
-    document.body.classList.remove("active");
+    document.body.classList.remove("no-scoll");
   }, []);
   const closeFunc = (e: MouseEvent<HTMLButtonElement | HTMLDivElement>) => {
     if (e.currentTarget === e.target) setMenu(false);
@@ -70,27 +70,47 @@ const Header = () => {
             <div className={styles["nav__inner"]}>
               <ul className={styles["nav__inner-links"]}>
                 <li>
-                  <a aria-label="go to section" href="#about">
+                  <a
+                    aria-label="go to section"
+                    onClick={() => setMenu(false)}
+                    href="#about"
+                  >
                     About Me
                   </a>
                 </li>
                 <li>
-                  <a aria-label="go to section" href="#portfolio">
+                  <a
+                    aria-label="go to section"
+                    onClick={() => setMenu(false)}
+                    href="#portfolio"
+                  >
                     Portfolio
                   </a>
                 </li>
                 <li>
-                  <a aria-label="go to section" href="#experience">
+                  <a
+                    aria-label="go to section"
+                    onClick={() => setMenu(false)}
+                    href="#experience"
+                  >
                     Experience
                   </a>
                 </li>{" "}
                 <li>
-                  <a aria-label="go to section" href="#services">
+                  <a
+                    aria-label="go to section"
+                    onClick={() => setMenu(false)}
+                    href="#services"
+                  >
                     Services
                   </a>
                 </li>
                 <li>
-                  <a aria-label="go to section" href="#testimonials">
+                  <a
+                    aria-label="go to section"
+                    onClick={() => setMenu(false)}
+                    href="#testimonials"
+                  >
                     Testimonials
                   </a>
                 </li>
@@ -98,6 +118,7 @@ const Header = () => {
               <a
                 aria-label="go to section"
                 href="#contact"
+                onClick={() => setMenu(false)}
                 className={styles["nav__inner-button"]}
               >
                 <b>Book a call</b>
