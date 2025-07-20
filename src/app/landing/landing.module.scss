@@ -1067,7 +1067,7 @@
     padding: 90px 0;
     &__inner {
       &-top {
-        margin-bottom: 70px;
+        margin-bottom: 100px;
       }
     }
     &Item {
@@ -1102,7 +1102,7 @@
     padding: 80px 0 60px;
     &__inner {
       &-top {
-        margin-bottom: 70px;
+        margin-bottom: 100px;
       }
     }
     &Card {
@@ -1210,16 +1210,12 @@
     padding: 60px 0;
     &__inner {
       :global(.title) {
-        margin-bottom: 30px;
       }
     }
   }
   .experience {
     padding: 60px 0;
     &__inner {
-      &-top {
-        margin-bottom: 50px;
-      }
       &-text {
         p {
           margin-bottom: 20px;
@@ -1299,9 +1295,6 @@
   .services {
     padding: 60px 0 40px;
     &__inner {
-      &-top {
-        margin-bottom: 50px;
-      }
       &-text {
         p {
           margin-bottom: 20px;
@@ -1373,11 +1366,6 @@
   }
   .experience {
     padding: 40px 0;
-    &__inner {
-      &-top {
-        margin-bottom: 24px;
-      }
-    }
     &Item {
       &__body {
         flex-direction: column;
@@ -1477,7 +1465,6 @@
       :global(.title) {
         width: 100%;
         max-width: unset;
-        margin-bottom: 16px;
       }
     }
     &Item {
@@ -1510,7 +1497,6 @@
       :global(.title) {
         width: 100%;
         max-width: unset;
-        margin-bottom: 16px;
       }
     }
   }
@@ -1567,6 +1553,7 @@
       width: 100%;
       max-width: unset;
       margin-bottom: 40px;
+        transform: translate(0) !important;
     }
   }
   .projects {
@@ -1601,11 +1588,7 @@
   }
   .services {
     padding: 40px 0;
-    &__inner {
-      &-top {
-        margin-bottom: 30px;
-      }
-    }
+
     &Card {
       padding: 30px 20px;
       margin-bottom: 18px;
