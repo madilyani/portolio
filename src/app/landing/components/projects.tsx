@@ -11,15 +11,10 @@ import { Navigation } from "swiper/modules";
 import { arrowRight, chevronLeft, chevronRight } from "@/app/constants/SVG";
 import { motion } from "framer-motion";
 import { fadeInLeft, fadeInUp } from "@/app/constants/animation";
+import classNames from "classnames";
 const ProjectsItem = ({ itemData }: { itemData: IProjectItem }) => {
   return (
     <div className={styles["projectsItem"]}>
-      <a
-        href={itemData.link}
-        target="_blank"
-        aria-label={itemData.title}
-        className={styles["projectsItem__link"]}
-      ></a>
       <div className={styles["projectsItem__image"]}>
         <Image
           width={260}
@@ -27,6 +22,12 @@ const ProjectsItem = ({ itemData }: { itemData: IProjectItem }) => {
           src={itemData.image}
           alt="React frontend project"
         />
+        <a
+          href={itemData.link}
+          target="_blank"
+          aria-label={itemData.title}
+          className={styles["projectsItem__link"]}
+        ></a>
       </div>
       <div className={styles["projectsItem__content"]}>
         <div className={styles["projectsItem__content-title"]}>
@@ -85,6 +86,7 @@ const Projects = () => {
             })}
             <div className={styles["arrows"]}>
               <button
+                className={styles["arrow"]}
                 aria-label="Previous slide"
                 type="button"
                 onClick={() => swiperRef.current?.slidePrev()}
@@ -92,6 +94,7 @@ const Projects = () => {
                 {chevronLeft}
               </button>
               <button
+                className={classNames(styles["arrow"], styles["next"])}
                 aria-label="Next slide"
                 type="button"
                 onClick={() => swiperRef.current?.slideNext()}

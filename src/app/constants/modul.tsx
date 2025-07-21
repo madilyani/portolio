@@ -317,7 +317,7 @@ export const projectsList = [
     image: project5,
     title: "Branda website",
     text: "Front end development and website animations",
-    link: "#",
+    link: "https://branda.vercel.app/",
   },
   {
     id: "6",
