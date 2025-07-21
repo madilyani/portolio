@@ -96,6 +96,7 @@ const ContactForm = () => {
                 <a
                   href="https://t.me/madilyani"
                   target="_blank"
+                  rel="noopener noreferrer nofollow"
                   aria-label="Contact"
                 >
                   {telegram}
@@ -103,6 +104,7 @@ const ContactForm = () => {
                 <a
                   href="https://github.com/madilyani/"
                   target="_blank"
+                  rel="noopener noreferrer nofollow"
                   aria-label="Contact"
                 >
                   {github}
@@ -110,6 +112,7 @@ const ContactForm = () => {
                 <a
                   href="https://www.instagram.com/dev_madilyani1"
                   target="_blank"
+                  rel="noopener noreferrer nofollow"
                   aria-label="Contact"
                 >
                   {instagram}
@@ -117,6 +120,7 @@ const ContactForm = () => {
                 <a
                   href="https://wa.me/99365817018"
                   target="_blank"
+                  rel="noopener noreferrer nofollow"
                   aria-label="Contact"
                   className={styles["mid"]}
                 >
@@ -125,6 +129,7 @@ const ContactForm = () => {
                 <a
                   href="https://www.fiverr.com/madilyani/"
                   target="_blank"
+                  rel="noopener noreferrer nofollow"
                   aria-label="Contact"
                   className={styles["big"]}
                 >

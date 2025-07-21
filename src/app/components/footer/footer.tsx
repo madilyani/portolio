@@ -17,6 +17,7 @@ const Footer = () => {
                 <a
                   href="https://www.fiverr.com/madilyani/"
                   target="_blank"
+                  rel="noopener noreferrer nofollow"
                   aria-label="contact fiverr"
                 >
                   <Image src={fiverr} alt="fiverr" />
@@ -37,6 +38,7 @@ const Footer = () => {
                 href="https://www.instagram.com/dev_madilyani1"
                 aria-label="contact"
                 target="_blank"
+                rel="noopener noreferrer nofollow"
               >
                 {instagram}
                 Instagram
@@ -44,6 +46,7 @@ const Footer = () => {
               <a
                 href="https://t.me/madilyani"
                 target="_blank"
+                rel="noopener noreferrer nofollow"
                 aria-label="contact"
               >
                 {telegram}
@@ -52,6 +55,7 @@ const Footer = () => {
               <a
                 href="https://github.com/madilyani/"
                 target="_blank"
+                rel="noopener noreferrer nofollow"
                 aria-label="contact"
               >
                 {github}
@@ -60,6 +64,7 @@ const Footer = () => {
               <a
                 href="https://wa.me/99365817018"
                 target="_blank"
+                rel="noopener noreferrer nofollow"
                 aria-label="contact"
               >
                 {whatsapp}
@@ -107,6 +112,7 @@ const Footer = () => {
                 aria-label="Contact"
                 href="https://www.instagram.com/dev_madilyani1"
                 target="_blank"
+                rel="noopener noreferrer nofollow"
               >
                 @dev_madilyani1
               </a>

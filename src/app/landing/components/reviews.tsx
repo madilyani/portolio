@@ -103,6 +103,7 @@ const Reviews = () => {
           <motion.div {...fadeInUp(0.4)}>
             <a
               target="_blank"
+              rel="noopener noreferrer nofollow"
               href="https://www.fiverr.com/madilyani"
               aria-label="Contact"
               className={styles["testimonials__inner-btn"]}
