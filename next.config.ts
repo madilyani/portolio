@@ -5,9 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     formats: ['image/webp'],
   },
-  experimental: {
-    optimizeCss: true, // CSS minification and optimization
-  },
 };
 
 export default nextConfig;
