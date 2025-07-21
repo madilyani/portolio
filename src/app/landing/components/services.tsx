@@ -21,7 +21,6 @@ const ServiceItem = ({
       style={{
         y: useTransform(scrollYProgress, [0, 0.8], [0, index * 100]),
       }}
-      {...fadeInUp(index * 0.1)}
       className={styles["servicesCard"]}
     >
       <div className={styles["servicesCard__title"]}>
