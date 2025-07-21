@@ -88,7 +88,7 @@ const Hero = () => {
                   : "D. Madilyani - Professional web developer workspace setup"
               }
               fetchPriority="high"
-              priority
+              priority={true}
             />
           </div>
         </div>

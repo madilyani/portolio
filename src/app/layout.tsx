@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "@/assets/css/main.scss";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
-import heroImage from "@/assets/images/hero.webp";
-import heroMobile from "@/assets/images/heroMobile.webp";
 
 export const metadata: Metadata = {
   title: {
@@ -38,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "Madilyani Portfolio",
     images: [
       {
-        url: "https://portolio-bay-six.vercel.app/image-jpg.jpg",
+        url: "https://www.madilyani.art/image-jpg.jpg",
         width: 1200,
         height: 630,
         alt: "Portfolio Preview",
@@ -50,9 +48,9 @@ export const metadata: Metadata = {
     title: "React Developer for Hire - D. Madilyani",
     description:
       "Frontend developer specializing in Next.js and Figma UI design",
-    images: "https://portolio-bay-six.vercel.app/image-jpg.jpg",
+    images: "https://www.madilyani.art/image-jpg.jpg",
   },
-  metadataBase: new URL("https://portolio-bay-six.vercel.app/"),
+  metadataBase: new URL("https://www.madilyani.art/"),
 };
 
 export default function RootLayout({
@@ -65,21 +63,6 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <link
-          rel="preload"
-          href={heroMobile.src}
-          as="image"
-          media="(max-width: 768px)"
-          fetchPriority="high"
-        />
-        <link
-          rel="preload"
-          href={heroImage.src}
-          as="image"
-          media="(min-width: 769px)"
-          fetchPriority="high"
-        />
       </head>
       <body>
         <div className="layout">
