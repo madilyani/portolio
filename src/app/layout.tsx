@@ -4,6 +4,11 @@ import { Header } from "./components/header";
 import { Footer } from "./components/footer";
 
 export const metadata: Metadata = {
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    minimumScale: 1,
+  },
   title: {
     default: "Madilyani | Frontend Developer & UI Designer",
     template: "%s | Madilyani",
@@ -63,13 +68,7 @@ export default function RootLayout({
 }) {
   return (
     <html style={{ position: "relative" }} lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, minimum-scale=1"
-        />
-      </head>
+      <head></head>
       <body>
         <div className="layout">
           <Header />
