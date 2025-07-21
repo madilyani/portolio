@@ -1313,6 +1313,7 @@
       max-width: unset;
       margin-bottom: 24px;
       padding: 40px 30px;
+      transform: translate(0) !important;
       &:last-child {
         margin: 0;
       }
@@ -1553,7 +1554,7 @@
       width: 100%;
       max-width: unset;
       margin-bottom: 40px;
-        transform: translate(0) !important;
+      transform: translate(0) !important;
     }
   }
   .projects {

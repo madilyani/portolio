@@ -10,12 +10,20 @@ import { fadeIn, fadeInLeft, fadeInUp } from "@/app/constants/animation";
 const ServiceItem = ({
   itemData,
   index,
+  scrollYProgress,
 }: {
   itemData: IServiceItem;
   index: number;
+  scrollYProgress: any;
 }) => {
   return (
-    <motion.div {...fadeInUp(index * 0.1)} className={styles["servicesCard"]}>
+    <motion.div
+      style={{
+        y: useTransform(scrollYProgress, [0, 0.8], [0, index * 100]),
+      }}
+      {...fadeInUp(index * 0.1)}
+      className={styles["servicesCard"]}
+    >
       <div className={styles["servicesCard__title"]}>
         <span style={{ backgroundColor: itemData.iconColor }}></span>
         <b>{itemData.title}</b>
@@ -83,7 +91,14 @@ const Services = () => {
           </div>
           <div className={styles["services__inner-row"]}>
             {servicesList.map((item, index) => {
-              return <ServiceItem index={index} key={index} itemData={item} />;
+              return (
+                <ServiceItem
+                  scrollYProgress={scrollYProgress}
+                  index={index}
+                  key={index}
+                  itemData={item}
+                />
+              );
             })}
           </div>
         </div>
