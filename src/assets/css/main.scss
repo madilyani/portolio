@@ -5,13 +5,7 @@
 @use "./components/2-layout/components.scss" as *;
 
 // fonts
-@font-face {
-  font-family: "GT Flexa";
-  src: url("./fonts/GTFlexa-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
+
  
 @font-face {
   font-family: "GT Flexa";
@@ -29,13 +23,7 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "GT Pressura Mono";
-  src: url("./fonts/GTPressuraMono-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
+
 
 // CSS Variables in :root (not .layout)
 :root {
