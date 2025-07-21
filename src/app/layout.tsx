@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     default: "Madilyani | Frontend Developer & UI Designer",
     template: "%s | Madilyani",
   },
+
   description:
     "D. Madilyani - Award-winning Frontend Developer & UI Designer. Specializing in React, Next.js, and Figma design for startups. 790+ projects delivered with 20+ successful fundraisers.",
   keywords: [
@@ -58,6 +59,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.madilyani.art/"),
   alternates: {
     canonical: "/",
+  },
+  other: {
+    "color-scheme": "light only",
   },
 };
 
