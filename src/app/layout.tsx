@@ -51,6 +51,9 @@ export const metadata: Metadata = {
     images: "https://www.madilyani.art/image-jpg.jpg",
   },
   metadataBase: new URL("https://www.madilyani.art/"),
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
@@ -62,7 +65,10 @@ export default function RootLayout({
     <html style={{ position: "relative" }} lang="en">
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1"
+        />
       </head>
       <body>
         <div className="layout">
